@@ -14,7 +14,7 @@
         display: flex;
         justify-content: center;
         align-items: flex-start;
-        padding-top: 140px; /* Default for larger screens */
+        padding-top: 140px; /* Default for regular desktop */
         height: 100vh;
       }
 
@@ -24,24 +24,28 @@
         height: auto;
       }
 
-      /* 💻 Laptop-sized screens */
+      /* 💻 Medium screens (laptops) */
       @media (max-width: 1024px) {
         body {
-          padding-top: 80px; /* Raised from 100px */
+          padding-top: 80px;
         }
       }
 
-      /* 📱 Tablets and smaller */
+      /* 📱 Small screens (tablets/phones) */
       @media (max-width: 768px) {
         body {
-          padding-top: 40px; /* Raised from 60px */
+          padding-top: 40px;
         }
       }
 
-      /* 🖥️ Large monitors */
+      /* 🖥️ Large screens (monitors 1600px and wider) */
       @media (min-width: 1600px) {
+        body {
+          padding-top: 180px; /* ✅ Raised for better alignment on big screens */
+        }
+
         img {
-          max-width: 520px;
+          max-width: 520px; /* Slightly larger image */
         }
       }
     </style>
@@ -50,7 +54,3 @@
     <img src="7581ead7-d94f-4b04-b66f-ac6b0f13b99d.jpg" alt="Protecting People" />
   </body>
 </html>
-
-
-
-
