@@ -14,7 +14,7 @@
         display: flex;
         justify-content: center;
         align-items: flex-start;
-        padding-top: 140px; /* 👈 Exactly matches Salesforce login box */
+        padding-top: 60px; /* 👈 Laptop & smaller default */
         height: 100vh;
       }
 
@@ -23,9 +23,17 @@
         max-width: 478px;
         height: auto;
       }
+
+      /* 🖥️ For big screens like external monitors */
+      @media (min-width: 1600px) {
+        body {
+          padding-top: 140px; /* 👈 Matches Salesforce login panel */
+        }
+      }
     </style>
   </head>
   <body>
     <img src="7581ead7-d94f-4b04-b66f-ac6b0f13b99d.jpg" alt="Protecting People" />
   </body>
 </html>
+
