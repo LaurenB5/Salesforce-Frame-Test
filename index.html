@@ -14,7 +14,7 @@
         display: flex;
         justify-content: center;
         align-items: flex-start;
-        padding-top: 120px; /* ⬅️ Just bumped this up globally */
+        padding-top: 80px; /* 👈 Default for laptops/smaller screens */
         height: 100vh;
       }
 
@@ -23,10 +23,16 @@
         max-width: 478px;
         height: auto;
       }
+
+      /* 🖥️ Larger screens (monitors) */
+      @media (min-width: 1600px) {
+        body {
+          padding-top: 120px; /* 👈 More padding on big screens */
+        }
+      }
     </style>
   </head>
   <body>
     <img src="7581ead7-d94f-4b04-b66f-ac6b0f13b99d.jpg" alt="Protecting People" />
   </body>
 </html>
-
